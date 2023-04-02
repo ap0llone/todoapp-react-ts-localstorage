@@ -1,0 +1,54 @@
+.todo__card {
+    display: flex;
+    align-items: center;
+    column-gap: 25px;
+    padding-bottom: 10px;
+}
+.todo__card-title {
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+    letter-spacing: 0.1em;
+    padding-bottom: 10px;
+    text-align: center;
+    margin: 0px;
+
+    cursor: pointer;
+
+    color: rgba(255, 255, 255, 0.7);
+    border-bottom: 4px solid #4840405e;
+}
+.todo__card-btn {
+    border: none;
+    outline: none;
+    background: transparent;
+}
+@media (max-width: 505px) {
+    .todo__card-btn {
+        img {
+            width: 35px;
+            height: 35px;
+        }
+    }
+    .todo__card-title {
+        font-size: 20px;
+    }
+}
+@media (max-width: 450px) {
+    .todo__card-title {
+        max-width: 300px;
+    }
+}
+@media (max-width: 385px) {
+    .todo__card-btn {
+        img {
+            width: 30px;
+            height: 30px;
+        }
+    }
+    .todo__card-title {
+        font-size: 18px;
+        line-height: 25px;
+        padding: 0;
+    }
+}
